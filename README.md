@@ -40,7 +40,7 @@ flask_elastic_beanstalk_example
 * Next EB will ask for the following information to deploy the app
  * AWS access key ID (hit enter if you followed above steps) 
  * AWS secret key (hit enter if you followed above steps) 
- * Service region (select 1, for east-us-1)
+ * Service region (select 1, for us-east-1)
  * Application name (will default to name of directory unless changed)
  * Environment name (will default tp name of directory-env unless changed)
  * Select an Environment Tier (1 is Webserver, 2 is Worker)
