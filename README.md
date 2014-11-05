@@ -42,7 +42,7 @@ flask_elastic_beanstalk_example
  * AWS secret key (hit enter if you followed above steps) 
  * Service region (select 1, for us-east-1)
  * Application name (will default to name of directory unless changed)
- * Environment name (will default tp name of directory-env unless changed)
+ * Environment name (will default t0 name of directory-env unless changed)
  * Select an Environment Tier (1 is Webserver, 2 is Worker)
  * Select a solution stack (36 is 64bit Amazon Linux 2014.09 v1.0.9 running Python 2.7 used in this app) 
  * Select environment type (LoadBalanced vs SingleInstance)
