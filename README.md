@@ -72,7 +72,6 @@ eb start
 eb status --verbose
 ```
  * If built properly it will show Greeen. A URL will be provided for your app, check it out in the browser. 
- * 
  
 **5) Update your app** 
 * Edit your app, and make sure to commit the changes.
