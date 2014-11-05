@@ -1,7 +1,7 @@
 flask_elastic_beanstalk_example
 ===============
 
-Setting up Elastic Beanstalk 
+**Setting up Elastic Beanstalk** 
 
 1) Setup Eb command line interface
 * Downloand http://aws.amazon.com/code/6752709412171743
@@ -20,3 +20,4 @@ export AWS_CREDENTIAL_FILE=<the file created above>
 ``` 
  
 * boom all done
+
