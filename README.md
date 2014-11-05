@@ -86,7 +86,7 @@ eb delete # delete the app
 ```
 
 **Other Helpful Hints**  
-* When deploying a python app, use a requirements.txt file to upload modules (they will be automatically installed when deployed
+* When deploying a python app, use a requirements.txt file to upload modules (they will be automatically installed when deployed)
 * To change the configuration options edit the optionsettings file in the .elasticbeanstalk directory .
  * You can also set environment variables in this file (or in the configuration section of the management console as a key pair)
 
