@@ -26,6 +26,7 @@ flask_elastic_beanstalk_example
 **2) Initialize your repo** 
 
 * Initialize Your Git Repository by either cloning this repo or intializing a new repo
+
   ``` 
   git init .
   ``` 
