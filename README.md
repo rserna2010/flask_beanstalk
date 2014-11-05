@@ -15,8 +15,8 @@ AWSSecretKey=Write your AWS secret key
 ```
 
 *  set the AWS_CREDENTIAL_FILE environment variable so that the AWS Elastic Beanstalk CLI tools can find your information.
- ``` 
- export AWS_CREDENTIAL_FILE=<the file created above>
- ``` 
+``` 
+export AWS_CREDENTIAL_FILE=<the file created above>
+``` 
  
 * boom all done
