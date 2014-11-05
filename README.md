@@ -76,11 +76,13 @@ flask_elastic_beanstalk_example
  
 **5) Update your app** 
 * Edit your app, and make sure to commit the changes.
+ 
   ```
   eb push 
   ```
 
 **5) Destroy your app** 
+ 
   ```
   eb stop # terminate the environment 
   eb delete # delete the app
