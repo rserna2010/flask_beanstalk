@@ -23,13 +23,14 @@ export AWS_CREDENTIAL_FILE=<the file created above>
 eb --version
 ``` 
 
-**2) Deploy your first app** 
+**2) Initialize your repo** 
 
 * Initialize Your Git Repository by either cloning this repo or intializing a new repo
 ``` 
 git init .
 ``` 
- 
+
+**3) Configure AWS Elastic Beanstalk** 
 * CD into the parent directory of your app and configure elastic beanstalk 
 ``` 
 eb init
@@ -45,7 +46,7 @@ eb init
  * Select environment type (LoadBalanced vs SingleInstance)
  * Create an Amazon Relational Database Database Instance (defaults to msyql if yes is selected) 
    *For more info on Amazon RDS http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create_deploy_Python.rds.html 
- * Attach an instance profile (select the intance profile with the appropriate role policy) 
+ * Attach an instance profile (select the intance profile with the appropriate role policy, which can be edited in the IAM section) 
    * This app requires SQS:GetQueueURL, SQS:GetQueueAttributes, SQS:SendMessage 
    ``` 
    {
@@ -59,4 +60,36 @@ eb init
             "Resource": "*"
    },
    ``` 
+
+**4) Create the App** 
+* Run the following command to create and deploy the app which you initialized in step 2
+```
+eb start
+```
+
+* This will take 5-10 mins, sit back, relax, and maybe have a protein shake. Just don't be all bro-ey about it. Done? Awesome, now check the status of your app
+```
+eb status --verbose
+```
+ * If built properly it will show Greeen. A URL will be provided for your app, check it out in the browser. 
+ * 
+ 
+**5) Update your app** 
+* Edit your app, and make sure to commit the changes.
+```
+eb push 
+```
+
+**5) Destroy your app** 
+```
+eb stop # terminate the environment 
+eb delete # delete the app
+```
+
+Other helpful hints. 
+* When deploying a python app, use a requirements.txt file to upload modules 
+
+ 
+
+
 
