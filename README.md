@@ -35,6 +35,7 @@ flask_elastic_beanstalk_example
   ``` 
   eb init
   ```  
+
 * Next EB will ask for the following information to deploy the app
  * AWS access key ID (hit enter if you followed above steps) 
  * AWS secret key (hit enter if you followed above steps) 
