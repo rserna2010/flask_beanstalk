@@ -14,27 +14,27 @@ flask_elastic_beanstalk_example
   ```
 
 *  set the AWS_CREDENTIAL_FILE environment variable so that the AWS Elastic Beanstalk CLI tools can find your information.
-``` 
-export AWS_CREDENTIAL_FILE=<the file created above>
-``` 
+  ``` 
+  export AWS_CREDENTIAL_FILE=<the file created above>
+  ``` 
  
 * Ensure eb is now setup
-``` 
-eb --version
-``` 
+  ``` 
+  eb --version
+  ``` 
 
 **2) Initialize your repo** 
 
 * Initialize Your Git Repository by either cloning this repo or intializing a new repo
-``` 
-git init .
-``` 
+  ``` 
+  git init .
+  ``` 
 
 **3) Configure AWS Elastic Beanstalk** 
 * CD into the parent directory of your app and configure elastic beanstalk 
-``` 
-eb init
-```  
+  ``` 
+  eb init
+  ```  
 * Next EB will ask for the following information to deploy the app
  * AWS access key ID (hit enter if you followed above steps) 
  * AWS secret key (hit enter if you followed above steps) 
@@ -63,27 +63,27 @@ eb init
 
 **4) Create the App** 
 * Run the following command to create and deploy the app which you initialized in step 2
-```
-eb start
-```
+  ```
+  eb start
+  ```
 
 * This will take 5-10 mins, sit back, relax, and maybe have a protein shake. Just don't be all bro-ey about it. Done? Awesome, now check the status of your app
-```
-eb status --verbose
-```
+  ```
+  eb status --verbose
+  ```
  * If built properly it will show Greeen. A URL will be provided for your app, check it out in the browser. 
  
 **5) Update your app** 
 * Edit your app, and make sure to commit the changes.
-```
-eb push 
-```
+  ```
+  eb push 
+  ```
 
 **5) Destroy your app** 
-```
-eb stop # terminate the environment 
-eb delete # delete the app
-```
+  ```
+  eb stop # terminate the environment 
+  eb delete # delete the app
+  ```
 
 **Other Helpful Hints**  
 * When deploying a python app, use a requirements.txt file to upload modules (they will be automatically installed when deployed)
