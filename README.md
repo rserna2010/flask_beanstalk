@@ -1,4 +1,4 @@
-flask_beanstalk
+flask_elastic_beanstalk_example
 ===============
 
 Setting up Elastic Beanstalk 
