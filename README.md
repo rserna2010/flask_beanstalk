@@ -46,8 +46,7 @@ flask_elastic_beanstalk_example
  * Select an Environment Tier (1 is Webserver, 2 is Worker)
  * Select a solution stack (36 is 64bit Amazon Linux 2014.09 v1.0.9 running Python 2.7 used in this app) 
  * Select environment type (LoadBalanced vs SingleInstance)
- * Create an Amazon Relational Database Database Instance (defaults to msyql if yes is selected) 
-   *For more info on Amazon RDS http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create_deploy_Python.rds.html 
+ * Create an Amazon Relational Database Database Instance (defaults to msyql if yes is selected; for more info on Amazon RDS http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create_deploy_Python.rds.html)
  * Attach an instance profile (select the intance profile with the appropriate role policy, which can be edited in the IAM section) 
    * This app requires SQS:GetQueueURL, SQS:GetQueueAttributes, SQS:SendMessage 
    ``` 
