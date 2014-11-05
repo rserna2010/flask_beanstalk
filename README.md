@@ -19,4 +19,4 @@ AWSSecretKey=Write your AWS secret key
  export AWS_CREDENTIAL_FILE=<the file created above>
  ``` 
  
- * boom all done
+* boom all done
