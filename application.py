@@ -19,13 +19,13 @@ def welcome():
 @application.route('/sign_up', methods=['POST'])
 def sign_up():
     if not request.json or 'to' not in request.json \
-            or 'body' not in request.json:
+            or 'body' not in request.json or 'from' not in request.json:
         abort(400)
     email = {
         'to': request.json['to'],
         'body': request.json['body'],
-        'subject': request.json.get('subject', "Mailgun Test"),
-        'from': request.json.get('from', "Test <test@balancedpayments.com>"),
+        'subject': request.json.get('subject', "Elastic Beanstalk Example"),
+        'from': request.json.get('from'),
     }
     try:
         write_to_que(email)
