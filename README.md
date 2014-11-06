@@ -3,7 +3,11 @@ flask_elastic_beanstalk_example
 
 **1) Set up Elastic Beanstalk Command Line Interface** 
 
-* pip install awsebcli
+* Install awsebcli
+ ``` 
+ pip install awsebcli
+ ``` 
+ 
 *  Yes, it's that easy. 
  
 * Ensure eb is now setup
